@@ -1,0 +1,90 @@
+/* Find Password Modal 스타일링 */
+.find-pw-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.find-pw-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.find-pw-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.find-pw-modal .find-pw-form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 100%;
+    justify-content: left;
+}
+
+.find-pw-modal .find-pw-form-group label {
+    width: 80px;  
+    text-align: right;
+    margin-right: 10px; 
+}
+
+.find-pw-modal .find-pw-form-group input {
+    padding: 0.5em;
+    box-sizing: border-box;     
+    width: 200px; 
+    text-align: left;  
+}
+
+.find-pw-modal .find-pw-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.find-pw-modal .find-pw-btn, .find-pw-modal .find-pw-close-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: #f0c040;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.find-pw-modal .find-pw-btn:hover, .find-pw-modal .find-pw-close-btn:hover {
+    background-color: #e0a030;
+}
+
+.find-pw-match-check {
+    margin:0;
+}
+
+.find-pw-match {
+    color: green;
+    font-size: 13px;
+    margin-top:0;
+}
+
+.find-pw-mismatch {
+    color: red;
+    font-size: 12px;
+    margin-top:0;
+}

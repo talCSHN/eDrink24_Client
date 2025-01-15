@@ -1,0 +1,168 @@
+.setPlace-container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 344px; /* 가로 크기 */
+    max-width: 450px;
+    width: 100%;
+    height: auto; 
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto; 
+    z-index: 999;
+}
+
+.setPlace-header {
+    height: 68px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.setPlace-header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    flex-grow: 1;  /* 여유 공간을 차지하도록 설정 */
+    text-align: center;  /* 텍스트를 중앙에 정렬 */
+    margin: 0;  /* 기본 마진 제거 */
+    margin-right: 15px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: auto; 
+    margin-left:10px;
+    margin-bottom:15px;
+}
+
+.setPlace-header .close-button img {
+    width: 24px;
+}
+
+
+
+/*  지도 */
+.setPlace-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 30px 20px 30px;
+    max-width: 390px;
+    min-height: 390px;
+}
+
+
+/* 매장정보*/
+.info-container {
+    margin-bottom: 20px;
+}
+
+.marker-info {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 15px; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+    box-sizing: border-box; 
+}
+
+.store-name {
+    font-size: 15px;
+    margin-bottom: 10px; 
+}
+
+.store-address, .store-phone {
+    font-size: 12px;
+    color: #555; 
+    margin-bottom: 10px; 
+}
+
+.marker-button {
+    background-color: #FFB71B; 
+    color: #fff;
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 12px; 
+    cursor: pointer; 
+    font-size: 14px;
+}
+
+
+/* 정보보여주는 곳*/
+.setPlace-context {
+    padding: 0px 30px 30px 30px;
+    margin-bottom: 100px;
+    background-color: #f9f9f9; /* 배경색 설정 */
+    font-family: Arial, sans-serif; /* 폰트 설정 */
+}
+
+
+.setPlace-change-button {
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+}
+
+.setPlace-address-btn, .setPlace-location-btn {
+    background-color: #FFB71B; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; 
+}
+
+.setPlace-address-btn:hover, .setPlace-location-btn:hover {
+    background-color: #de942c;
+}
+
+/* 내 위치 및 매장 정보 스타일 */
+.setPlace-showAddress {
+    background-color: #ffffff; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.setPlace-showAddress p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333; 
+}
+
+.setPlace-store {
+    background-color: #f1f1f1; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.setPlace-store p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.setPlace-update-button {
+    display: flex;
+    justify-content: center;
+}
+
+.setPlace-set-btn {
+    background-color: #FFB71B; 
+    width: 90%;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 18px;
+
+}

@@ -1,0 +1,146 @@
+/* container */
+.review-container {
+    min-width: 344px;
+    max-width: 430px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* 세로로 배치 */
+    margin: 0 auto;
+    min-height: var(--min-height); /* 최소 높이 설정 */
+}
+
+/* header */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    padding: 0 8px;
+    position: relative; /* 절대 위치 사용을 방지 */
+    z-index: 10;
+    background-color: white; /* 배경색을 설정하여 겹침 방지 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+}
+
+.review-header h1 {
+    font-size: var(--font-size-large-body); /* 큰 글자 크기 */
+    font-weight: 700;
+    color: #191919;
+    margin: 0 auto;
+    text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+.review-header button {
+    width: 44px;
+    height: 58px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFB71B;
+    transition: background-color 0.3s, color 0.3s; /* 색상 전환 애니메이션 */
+}
+
+.review-header img {
+    width: 24px;
+    height: 24px;
+}
+
+/* body */
+.review-form {
+    min-width: 344px;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px; /* 헤더 아래에 여백 추가 */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-content-form {
+    margin-top:20px;
+}
+
+.review-product-info {
+    display: flex;
+    align-items: center;
+}
+
+.review-product-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.review-product-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.review-rating-section {
+    margin-bottom: 15px;
+}
+
+.review-rating-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.review-stars {
+    display: flex;
+    align-items: center;
+}
+
+.review-star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.review-stars .star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ddd; /* 기본 색상: 회색 */
+}
+
+.review-stars .star.filled {
+    color: #FFD700; /* 선택된 색상: 금색 */
+}
+
+.review-score {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.review-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.review-submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFB71B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.review-submit-button:hover {
+    background-color: #0056b3;
+}

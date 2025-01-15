@@ -1,0 +1,458 @@
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.productDetailComponent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: 344px;
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  /* overflow-y: auto; */
+  background-color: #ffffff;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+  margin: 0 auto;
+}
+
+/**************************************************************************/
+.productDetailComponent-header {
+  height: 102px;
+  display: flex;
+  width:100%;
+  padding: 44px 20px 0px 20px;
+  box-sizing: border-box;
+}
+
+.productDetailComponent-navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.productDetailComponent-nav-empty-box {
+  width: 184px;
+  height: 58px;
+  margin: 0;
+  padding: 0;
+}
+
+.productDetailComponent-navigation-bar button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+.productDetailComponent-navigation-bar img {
+  width: auto;
+  height: 24px;
+  margin: 0;
+}
+
+.productDetailComponent-back-icon-button,
+.productDetailComponent-search-icon-button {
+  width: 54px;
+  height: 58px;
+}
+
+.productDetailComponent-home-icon-button {
+  width: 44px;
+  height: 58px;
+}
+
+.productDetailComponent-bag-icon-button {
+  width: 54px;
+  height: 58px;
+}
+
+/**************************************************************************/
+
+.productDetailComponent-product-detail-container {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.productDetailComponent-product-img-container {
+  margin:0 auto;
+}
+
+.productDetailComponent-product-img {
+  width: 390px;
+  height: 390px;
+  display: flex;
+  background-color: #EFF1F3;
+}
+
+.productDetailComponent-product-other {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productDetailComponent-product-review {
+  display: flex;
+  align-items: center;
+  row-gap: 4px;
+}
+
+.productDetailComponent-product-review img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.productDetailComponent-product-review h2 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.productDetailComponent-product-option {
+  display: flex;
+}
+
+.productDetailComponent-product-option button {
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.productDetailComponent-product-option img {
+  width: 24px;
+  height: 24px;
+}
+
+.productDetailComponent-product-title {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.productDetailComponent-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.productDetailComponent-info-mesg {
+  font-size: 12px;
+  font-weight: 400;
+  color: #687787;
+  margin: 0;
+}
+
+.productDetailComponent-price-per {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.productDetailComponent-price-item {
+  font-size: 24px;
+  font-weight: 700;;
+}
+
+.productDetailComponent-today-pickup-img {
+  width: 62px;
+  height: 20px;
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+/**************************************************************************/
+
+.productDetailComponent-content {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.productDetailComponent-content p {
+  width: 100%;
+  margin: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+}
+
+.productReviewContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewUserInfo {
+  margin: 16px 0 0;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.userName span {
+  padding-left: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #191919;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: space-between;
+}
+
+.rating span {
+  display: flex;
+  width: 6%;
+}
+
+.rating img {
+  width: 100%;
+  display: flex;
+}
+
+.reviewDate {
+  padding-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #687787;
+}
+
+.reviewDetails {
+  width: 100%;
+  margin: 0 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewContent {
+  width: 100%;
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #191919;
+}
+
+.reviewDetails2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewItem {
+  display: flex;
+  align-items: center;
+}
+
+.reviewItem div {
+  padding: 4px 10px;
+  background-color: #EEEEEE;
+  border-radius: 4px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  color: #191919;
+}
+
+.reviewItem span {
+  padding-left: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #191919;
+}
+
+.reviewModifiedDate {
+  width: 100%;
+  display: flex;
+  margin: 0 4px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #687787;
+  justify-content: flex-end;
+}
+
+.reviewCard .line2 {
+  margin: 32px 0;
+}
+/**************************************************************************/
+
+.productDetailComponent-option-footer {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  justify-content: flex-end;
+  transition: height 0.3s ease;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd; /* 상단에 라인을 추가하는 부분 */
+}
+
+.productDetailComponent-footer {
+  padding: 0 20px 34px 20px;
+}
+
+.productDetailComponent-select-more-items {
+  height: 32px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productDetailComponent-select-more-items img {
+  width: 32px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.productDetailComponent-option-buy-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 8px;
+}
+
+.productDetailComponent-option-buy-button button {
+  width: 100%;
+  height: 56px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.productDetailComponent-go-cart {
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 1.4px solid black;
+}
+
+.productDetailComponent-buy-now {
+  color: #ffffff;
+  background-color: black;
+  border: 1.4px solid black;
+}
+
+/**************************************************************************/
+
+/* 펼쳐지는 부분의 스타일 추가 */
+.productDetailComponent-expanded-section {
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 수량 조절 버튼 스타일 */
+.productDetailComponent-price-control {
+  display:flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.productDetailComponent-quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.productDetailComponent-quantity-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.productDetailComponent-quantity-display {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* 상품 하나 가격 */
+.productDetailComponent-price-per-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.productDetailComponent-total-info {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productDetailComponent-price-per-item {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.productDetailComponent-total-quantity {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.productDetailComponent-total-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/**************************************************************************/
+
+.productDetailComponent {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}

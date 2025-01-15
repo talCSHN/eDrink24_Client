@@ -1,0 +1,200 @@
+:root {
+    --font-size-large-body: 18px;   /* 큰 본문 글자 크기 */
+    --font-size-body: 16px;         /* 기본 본문 글자 크기 */
+    --font-size-medium-body: 14px;  /* 중간 본문 글자 크기 */
+    --font-size-small-body: 12px;   /* 작은 본문 글자 크기 */
+    --min-height: 568px;            /* 최소 화면 높이 (iPhone SE 1세대 기준) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+html, body {
+    min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+/**************************************************************************************************/
+
+.MyReview-wrapper {
+    min-width: 344px;
+    max-width: 430px;
+    width:100%;
+    height:100%;
+    display: flex;
+    margin: 0 auto;
+    min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+.MyReview-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/**************************************************************************************************/
+/*상단 네비게이션*/
+.MyReview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    padding: 0 8px;
+}
+
+.MyReview-header h1 {
+    font-size: var(--font-size-large-body); /* 큰 글자 크기 */
+    font-weight: 700;
+    color: #191919;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.MyReview-header button {
+    width: 44px;
+    height: 58px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color:#FFB71B;
+    transition: background-color 0.3s, color 0.3s; /* 색상 전환 애니메이션 */
+}
+
+.MyReview-header img {
+    width: 24px;
+    height: 24px;
+}
+
+/**************************************************************************************************//* 주문내역조회 */
+
+.MyReview-date {
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 20px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    color: #687787;
+    flex-direction: column;
+}
+
+.MyReview-content {
+    width: 100%;
+    display: flex;
+    padding: 16px 20px;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MyReview-info-content {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.MyReview-content img {
+    width: 100px; /* 원하는 고정 너비 설정 */
+    height: 100px; /* 원하는 고정 높이 설정 */
+    object-fit: cover; /* 이미지 비율을 유지하면서 잘라내기 */
+    display: block; /* 이미지가 독립된 블록 요소로 표시 */
+    margin: 0 auto; /* 가운데 정렬 (필요한 경우) */
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.MyReview-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.MyReview-content h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+    width: 100%;
+}
+
+.MyReview-info p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #191919;
+}
+
+.MyReview-info span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+    width: 100%;
+}
+
+.MyReview-info textarea {
+    width: 100%;
+    height: 32px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    outline: none; /* 기본 외곽선 제거 */
+}
+
+.MyReview-info textarea:focus {
+    border: 1px solid #191919;
+}
+
+.MyReview-content button {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB71B;
+    color:white;
+    outline:none;
+    border:none;
+    transition: background-color 0.3s, color 0.3s; 
+    border-radius: 8px;
+}
+
+.re {
+    display: flex;
+    justify-content: space-between;
+}
+
+.re input {
+    height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-left: 8px;
+    outline: none; /* 기본 외곽선 제거 */
+}
+
+.re input:focus {
+    border: 1px solid #191919;
+}
+
+.re-button {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.MyReview-container  button:hover {
+    background-color: black; /* 누른 후 배경색을 오렌지로 변경 */
+    color: white; /* 누른 후 글자색을 블랙으로 변경 */
+  }

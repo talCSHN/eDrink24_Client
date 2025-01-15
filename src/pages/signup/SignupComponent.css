@@ -1,0 +1,295 @@
+
+* {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+.signup-container {
+    background-color: white;
+    padding: 20px 20px 44px 20px;
+    min-width: 344px;
+    max-width: 450px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.signup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.signup-header h1 {
+    font-size: 20px;
+    margin-left:140px;
+    font-weight: 500;
+}
+
+.signup-header .su-close-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.signup-header .su-close-button img {
+    width: 24px;
+}
+
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-left:4px;
+    font-weight: medium;
+    font-size: 14px;
+}
+
+.gender-label {
+    display: block;
+    margin:0;
+    margin-left:5px;
+    margin-right: 5px;
+}
+
+
+.form-control-loginId {
+    height: 45px;
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-control-userName {
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.form-control {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup-input[type="radio"] {
+    margin: 0 5px;
+}
+
+.name-genderGroup {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.gender-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.gender-label input[type="radio"] {
+    display: none;
+}
+
+.gender-label input[type="radio"] + span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.gender-label input[type="radio"]:checked + span {
+    background-color: #f0c040;
+}
+
+.gender-label span.text {
+    vertical-align: middle;
+}
+
+.tel-num {
+    display: flex;
+}
+
+.tel-select {
+    width: 100px;
+    height: 45px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.postal-search {
+    display: flex;
+}
+
+.form-control-postal {
+    width: 300px;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #f0c040;
+    border: none;
+    border-radius: 30.5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #e0a030;
+}
+
+.check-button,
+.search-button {
+    background-color: #f0c040;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.crf-num {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+}
+
+.crf-button {
+    align-items: center;
+    background-color: #f0c040;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.crf-button.crf-complete {
+    background-color: green;
+    align-items: center;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.crf-form {
+    flex:1;
+    width: 50%;
+    height: 35px;
+    padding: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.crf-comp-button {
+    text-align: center;
+    background-color: #f0c040;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.crf-complete-text {
+    color:green;
+    font-size: 12px;
+}
+
+.timer-text {
+    color: red;
+    font-size: 14px;
+}
+
+.check-button:hover,
+.search-button:hover {
+    background-color: #e0a030;
+}
+
+.check-button.check-complete {
+    background-color: green;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    cursor: not-allowed;
+    margin-left: 10px;
+}
+
+.requiredCheck {
+    color:red;
+    font-size: 12px;
+}
+
+.pw-match {
+    color: green;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.pw-mismatch {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}

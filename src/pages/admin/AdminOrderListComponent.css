@@ -1,0 +1,79 @@
+/* 전체 컨테이너 */
+.orderlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding:20px;
+}
+
+/* 헤더 */
+.orderlist-home-header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.orderlist-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.orderlist-body p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.orderlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.orderlist-table th, 
+.orderlist-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.orderlist-table th {
+    background-color: #FFB71B;
+    color: white;
+    text-transform: uppercase;
+}
+
+.orderlist-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.orderlist-table td {
+    color: #555;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .orderlist-container {
+        width: 95%;
+    }
+
+    .orderlist-text {
+        font-size: 20px;
+    }
+
+    .orderlist-table th, 
+    .orderlist-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

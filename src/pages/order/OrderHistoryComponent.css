@@ -1,0 +1,226 @@
+:root {
+  --font-size-large-body: 18px;   /* 큰 본문 글자 크기 */
+  --font-size-body: 16px;         /* 기본 본문 글자 크기 */
+  --font-size-medium-body: 14px;  /* 중간 본문 글자 크기 */
+  --font-size-small-body: 12px;   /* 작은 본문 글자 크기 */
+  --min-height: 568px;            /* 최소 화면 높이 (iPhone SE 1세대 기준) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+html, body {
+  min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+/**************************************************************************************************/
+
+.orderHistory-wrapper {
+  min-width: 344px;
+  max-width: 430px;
+  width:100%;
+  height:100%;
+  display: flex;
+  margin: 0 auto;
+  min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+.orderHistory-container {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+/**************************************************************************************************/
+/*상단 네비게이션*/
+.orderHistory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  padding: 0 8px;
+}
+
+.orderHistory-header h1 {
+  font-size: var(--font-size-large-body); /* 큰 글자 크기 */
+  font-weight: 700;
+  color: #191919;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orderHistory-header button {
+  width: 44px;
+  height: 58px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.orderHistory-header img {
+  width: 24px;
+  height: 24px;
+}
+
+/**************************************************************************************************/
+.orderHistory-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.orderHistory-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.orderHistory-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 0 0;
+  align-items: center;
+}
+
+.orderHistory-date h3 {
+  font-size: var(--font-size-large-body);
+  font-weight: 700;
+  color: #191919;
+  margin: 0;
+  padding: 0;
+}
+
+.orderHistory-moreButton button {
+  border: none; /* 테두리 제거 */
+  background: none; /* 백그라운드 색상 제거 */
+  padding: 0; /* 기본 패딩 제거 */
+  font-size: 16px; /* 텍스트 크기 설정 */
+  color: inherit; /* 부모 요소의 글자색을 상속 */
+  cursor: pointer; /* 클릭 가능한 커서 모양으로 변경 */
+}
+
+.orderHistory-moreButton button::after {
+  content: " >"; /* '>' 기호 추가 */
+  font-weight: bold; /* '>' 기호를 굵게 표시 (원하는 경우) */
+  margin-left: 4px; /* 텍스트와 '>' 기호 사이의 간격 */
+}
+
+.orderHistory-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0 32px;
+  gap: 16px;
+}
+
+.orderHistory-pickUp {
+  color: #FFB71B;
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  display: flex;
+}
+
+.orderHistory-infoImg {
+  display: flex;
+  border: 1px solid #EEEEEE; /* 밝은 회색 테두리 */
+  border-radius: 4px; /* 모서리를 살짝 둥글게 만듦 */
+}
+
+.orderHistory-infoImg img {
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.orderHistory-info-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orderHistory-info-main span {
+  width: 80%;
+  font-size: var(--font-size-body);
+  font-weight: 700;
+  color: #191919;
+  word-wrap: break-word;
+}
+
+.orderHistory-info-main a {
+  font-size: var(--font-size-medium-body);
+  font-weight: 500;
+  color: #4B4B4B;
+}
+
+.orderHistory-info-main p {
+  font-size: var(--font-size-body);
+  font-weight: 700;
+  color: #191919;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.orderHistory-infoMain {
+  width: 100%;
+  gap: 16px;
+  display: flex;
+}
+
+.orderHistory-infoButton {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderHistory-button1 {
+  width: 100%;
+  height: 44px;
+  font-size: var(--font-size-medium-body);
+  font-weight: 700;
+  background-color: #EEEEEE; /* 기본 배경색을 블랙으로 설정 */
+  color: #191919; /* 기본 글자색을 흰색으로 설정 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer; /* 클릭 가능한 커서 모양으로 변경 */
+  transition: background-color 0.3s, color 0.3s; /* 색상 전환 애니메이션 */
+}
+
+.orderHistory-button1:hover {
+  background-color: #d0d0d0; /* 누른 후 배경색을 오렌지로 변경 */
+  color: #191919; /* 누른 후 글자색을 블랙으로 변경 */
+}
+
+.orderHistory-button2 {
+  width: 100%;
+  height: 44px;
+  font-size: var(--font-size-medium-body);
+  font-weight: 700;
+  background-color: #FFB71B; /* 기본 배경색을 블랙으로 설정 */
+  color: white; /* 기본 글자색을 흰색으로 설정 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer; /* 클릭 가능한 커서 모양으로 변경 */
+  transition: background-color 0.3s, color 0.3s; /* 색상 전환 애니메이션 */
+  border-radius: 8px;
+}
+
+.orderHistory-button2:hover {
+  background-color: black; /* 누른 후 배경색을 오렌지로 변경 */
+  color: white; /* 누른 후 글자색을 블랙으로 변경 */
+}
+
+
+

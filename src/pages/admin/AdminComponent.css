@@ -1,0 +1,78 @@
+/* AdminComponent.css */
+
+.admin-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* 전체 화면의 80% 너비 */
+    min-width: 1000px;
+    margin: 20px auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+/* 홈버튼 */
+.admin-back-button {
+    background: none;
+    border: none;
+}
+
+.admin-back-img {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+
+.admin-tabs {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-tabs span {
+    margin: 0;
+    padding: 10px 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 1rem; 
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+}
+
+.admin-tabs span:hover {
+    background-color: #e6e6e6;
+}
+
+@media (max-width: 768px) {
+    .admin-tabs span {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .admin-form-container {
+        width: 90%; /* 작은 화면에서 너비 증가 */
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-tabs {
+        font-size: 0.8rem;
+        padding: 8px 10px; /* 탭 간의 패딩 조정 */
+    }
+
+    .admin-form-container {
+        width: 100%; /* 더 작은 화면에서 최대 너비 사용 */
+        padding: 10px;
+    }
+}

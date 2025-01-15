@@ -1,0 +1,103 @@
+.point-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.point-modal-content {
+    position: relative; /* 추가된 속성 */
+    max-width: 600px; /* 모달 창의 최대 너비 */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 80vh; /* 모달 창의 최대 높이 */
+    overflow-y: auto; /* 모달 창 내부에서 스크롤 가능 */
+}
+
+.point-modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1001; /*모달 콘텐츠보다 위에 있도록 설정*/
+}
+
+.point-modal-table-container {
+    max-height: 60vh; /* 테이블 컨테이너의 최대 높이 */
+    overflow-y: auto; /* 테이블 컨테이너 내부에서 스크롤 가능 */
+    margin-top: 20px; /* 닫기 버튼과 간격 */
+}
+
+.point-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.point-table th, .point-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* 행 구분선 */
+}
+
+.point-table th {
+    background-color: orange; /* 헤더 배경색을 주황색으로 설정 */
+    color: white; /* 헤더 글씨색을 흰색으로 설정 */
+    font-weight: bold;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+.point-table th, .point-table td {
+    border: none; /* 선 제거 */
+    font-weight: bold; /* 텍스트 굵게 */
+}
+
+.point-table th:nth-child(3) {
+    width: 200px; /* 제품명 열의 너비를 조정 */
+}
+
+.point-table th:nth-child(4) {
+    width: 150px; /* 포인트적립 날짜 열의 너비를 조정 */
+}
+
+.point-wide-column {
+    width: 25%; /* 칸을 넓게 설정 */
+}
+
+.point-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.point-table tr:hover {
+    background-color: #ddd;
+}
+
+.point-table img {
+    max-width: 100px; /* 이미지의 최대 너비를 설정 */
+    max-height: 75px; /* 이미지의 최대 높이를 설정 */
+    object-fit: cover; /* 이미지 비율 유지하며 잘림 */
+    border-radius: 4px; /* 이미지에 모서리 둥글게 설정 (선택 사항) */
+}
+
+.point-table td {
+    white-space: normal; /* 날짜를 두 줄로 표시하도록 설정 */
+    word-wrap: break-word; /* 긴 단어가 줄바꿈 되도록 설정 */
+}
+
+.point-table .point-product-name {
+    max-width: 200px; /* 제품명 열의 최대 너비를 설정 */
+    word-wrap: break-word; /* 긴 단어가 줄바꿈 되도록 설정 */
+}

@@ -1,0 +1,222 @@
+:root {
+    --font-size-large-body: 18px;   /* 큰 본문 글자 크기 */
+    --font-size-body: 16px;         /* 기본 본문 글자 크기 */
+    --font-size-medium-body: 14px;  /* 중간 본문 글자 크기 */
+    --font-size-small-body: 12px;   /* 작은 본문 글자 크기 */
+    --min-height: 568px;            /* 최소 화면 높이 (iPhone SE 1세대 기준) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+html, body {
+    min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+/**************************************************************************************************/
+
+.homePage-wrapper {
+    min-width: 344px;
+    max-width: 430px;
+    width:100%;
+    height:100%;
+    display: flex;
+    margin: 0 auto;
+    min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+.homePage-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/**************************************************************************************************/
+/*상단 네비게이션*/
+.homePage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    padding: 0 8px 0 20px;
+}
+
+.homePage-logo {
+    height: 20px;
+    display: flex;
+}
+
+.homePage-header button {
+    width: 44px;
+    height: 58px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bell-button img,
+.bag-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/**************************************************************************************************/
+/* 컨테이너 스타일 */
+.Home-myPlace-container, .banner-container,
+.best-product {
+    width: auto;
+    margin: 20px 0 20px 20px;
+}
+
+.category-button-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 16px 0;
+    padding: 0 32px;
+}
+
+.line {
+    width: auto;
+}
+
+.home-container {
+    margin: 20px 20px 56px;
+}
+
+/* 마이 플레이스 컨테이너 스타일 */
+.Home-myPlace-container {
+    height: 80px;
+}
+
+.myHome-address {
+    height: 36px;
+    background-color: #AAAAAA;
+    display: flex;
+    align-items: center;
+}
+
+.myHome-address img {
+    height: 24px;
+    width: 24px;
+}
+
+.pickUp-address {
+    height: 44px;
+    background-color: #C9C9C9;
+    display: flex;
+    align-items: center;
+}
+
+.pickUp {
+    background-color: #54565A;
+    color: white;
+    width: 64px;
+    height: 23px;
+    display: flex; /* Flexbox 레이아웃을 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+/* 배너 컨테이너 스타일 */
+.banner-container {
+    height: 144px;
+    background: #667cd7;
+}
+
+/* 카테고리 버튼 컨테이너 스타일 */
+.mainHome-icon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 16px 0;
+    padding: 0 32px;
+}
+
+/* 버튼 기본 스타일 */
+.mainHome-item-icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mainHome-icon img {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 8px;
+}
+
+.mainHome-icon span {
+    font-size: var(--font-size-medium-body);
+    color: #191919;
+    font-weight: 700;
+}
+
+.category-button-container
+.menuButton, .searchButton,
+.giftButton, .chatbotButton {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.category-button-container h1 {
+    font-size: 10px;
+    font-weight:500;;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 라인 스타일 */
+.line {
+    height: 8px;
+    background-color: #F6F6F6;
+}
+
+.homeProduct-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.bestTitle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 헤더 텍스트 스타일 */
+h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.home-category {
+    font-size: 13px;
+    font-weight: 500;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* 더 보기 버튼 스타일 */
+.moreButton {
+    font-size: 14px;
+    font-weight: 500;
+    color: #AFAFAF;
+    margin: 0;
+    text-decoration: none; /* 밑줄 제거 */
+}

@@ -1,0 +1,70 @@
+/* 전체 컨테이너 스타일 */
+.admin-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* 타이틀 스타일 */
+.admin-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 테이블 스타일 */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-table th, 
+.order-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.order-table th {
+    background-color: #FFB71B;
+    color: white;
+    text-transform: uppercase;
+}
+
+.order-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.order-table td {
+    color: #555;
+}
+
+/* 버튼 스타일 */
+.pickup-button {
+    display: inline-block;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #FFB71B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.pickup-button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+

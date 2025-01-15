@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*전체 스타일 - 컨테이너 관리*/
+.ProductCard2 {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE, Edge */
+    border: none;
+}
+
+/***************************************************************************************************************/
+
+.ProductCard2:focus,
+.ProductCard2::-webkit-scrollbar,
+.ProductCard2::-webkit-scrollbar-thumb,
+.productCard-box2:focus {
+    outline: none;
+}
+
+.ProductCard2::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/***************************************************************************************************************/
+
+/* 상품 카드를 묶는 세트 컨테이너 */
+.ProductCardSet {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-basis: auto;
+    flex-shrink: 0;
+    width: 80%;
+}
+
+/* 상품 카드 - 박스 */
+.productCard-box2 {
+    display: flex;
+    flex-direction: row; /* 정보 부분이 이미지 오른쪽으로 오도록 설정 */
+    padding: 8px; /* 박스의 패딩을 줄임 */
+    gap: 16px; /* 이미지와 정보 사이의 간격 조정 */
+    flex-grow: 1;
+    flex-basis: 33.33%; /* 각 세트의 아이템이 3열로 배치되도록 설정 */
+    max-height: 150px; /* 카드 박스의 최대 높이 설정 */
+    border: none;
+}
+
+.productInfo-button2-tag {
+    display: flex;
+}
+
+/* 상품 이미지 */
+.productImage-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 30%;
+    width: 100%;
+}
+
+.productImage-box2 img {
+    max-width: 100%;
+    max-height: 100px; /* 이미지의 최대 높이를 줄임 */
+    object-fit: contain;
+    padding: 4px;
+    border: 3px solid #EEEEEE;
+    border-radius: 4px;
+}
+
+/* 상품 정보 */
+.productInfo-box2 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 상품 정보 - 이름, 가격 */
+.productInfo-info2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfo-name2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #191919;
+    width: 100%;
+}
+
+.productInfo-price2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* 리뷰 - 별, 평점, 전체 후기 */
+.productInfo-review2 {
+    display: flex;
+    gap: 4px;
+}
+
+.productInfo-review2 img {
+    width: 14px; /* 리뷰 아이콘 크기를 줄임 */
+    height: 14px;
+}
+
+.productInfo-review2 span {
+    font-size: 12px; /* 리뷰 텍스트 크기를 줄임 */
+}
+
+/* 하트, 장바구니 - 버튼 */
+.productInfo-button2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 오늘픽업 - 태그 */
+.productInfo-tag2 {
+    border-radius: 4px;
+    text-align: center;
+    transform-origin: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.today-product-tag2 {
+    background-color: #FFB718;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 2px; /* 태그의 패딩을 줄임 */
+    font-size: 12px; /* 태그의 글자 크기를 줄임 */
+    font-weight: 500;
+    min-width: 60px; /* 태그의 최소 너비를 줄임 */
+    text-align: center;
+}
+
+.today-product-tag-placeholder2 {
+    visibility: hidden; /* 빈 공간을 차지하도록 설정 */
+    min-width: 60px; /* 실제 아이콘과 같은 최소 너비 설정 */
+    height: 20px; /* 실제 아이콘과 같은 높이 설정 */
+}
+
+.productInfo-button2 button {
+    width: 28px; /* 버튼의 크기를 줄임 */
+    height: 28px;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.productInfo-button2 button img {
+    width: 18px; /* 버튼 아이콘의 크기를 줄임 */
+    height: 18px;
+}

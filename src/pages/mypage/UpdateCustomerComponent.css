@@ -1,0 +1,201 @@
+:root {
+    --font-size-large-body: 18px;   /* 큰 본문 글자 크기 */
+    --font-size-body: 16px;         /* 기본 본문 글자 크기 */
+    --font-size-medium-body: 14px;  /* 중간 본문 글자 크기 */
+    --font-size-small-body: 12px;   /* 작은 본문 글자 크기 */
+    --min-height: 568px;            /* 최소 화면 높이 (iPhone SE 1세대 기준) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
+
+html, body {
+    min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+/**************************************************************************************************/
+
+.updateCustomer-wrapper {
+    min-width: 344px;
+    max-width: 430px;
+    width:100%;
+    height:100%;
+    display: flex;
+    margin: 0 auto;
+    min-height: var(--min-height);  /* 최소 높이 설정 */
+}
+
+.updateCustomer-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/**************************************************************************************************/
+/*상단 네비게이션*/
+.updateCustomer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 58px;
+    padding: 0 8px;
+}
+
+.updateCustomer-header h1 {
+    font-size: var(--font-size-large-body); /* 큰 글자 크기 */
+    font-weight: 700;
+    color: #191919;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.updateCustomer-header button {
+    width: 44px;
+    height: 58px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.updateCustomer-header img {
+    width: 24px;
+    height: 24px;
+}
+
+/**************************************************************************************************/
+/* 회원정보수정 form*/
+.updateCustomer-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 16px 20px 0;
+}
+
+
+.updateCustomerForm {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.form-group {
+
+}
+
+label {
+    display: block;
+
+
+    font-weight: medium;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    height: 45px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.name-genderGroup {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+.tel-num {
+    display: flex;
+}
+
+.tel-select {
+    width: 100px;
+    height: 45px;
+    text-align: center;
+}
+
+.postal-search {
+    display: flex;
+}
+
+.form-control-postal {
+    width: 300px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group-submit {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-submit-complete {
+    width: 100%;
+    height: 60px;
+    background-color: #f0c040;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit-cancel {
+    width: 100%;
+    height: 60px;
+    background-color: #e32f1e;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit-complete:hover,
+.btn-submit-cancel:hover {
+    background-color: #e0a030;
+}
+
+.search-button {
+    background-color: #f0c040;
+    width:80px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #e0a030;
+}
+
+.requiredCheck {
+    color: red;
+    font-size: 12px;
+}
+
+.pw-match {
+    color: green;
+    font-size: 13px;
+}
+
+.pw-mismatch {
+    color: red;
+    font-size: 12px;
+}

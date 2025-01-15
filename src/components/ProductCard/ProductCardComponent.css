@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*전체스타일-관리하는*/
+.ProductCard {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+/*    flex-wrap: wrap; */ /*이 코드 활성화 하면, 세로로 배열이 바뀜.*/
+}
+
+.ProductCard::-webkit-scrollbar {
+    width: 0;
+}
+
+.ProductCard:focus {
+    outline: none;
+}
+
+/*******************************************************************************************/
+
+/*상품카드-박스*/
+.productCard-box {
+    width: 48%;
+    height: auto;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+/*    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+/*******************************************************************************************/
+
+/*상품-이미지*/
+.productImage-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    padding: 8px;
+    border: 3px solid #EEEEEE;
+    border-radius: 4px;
+}
+
+.productImage-box img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.productInfo-box {
+    margin-top: 16px;
+    padding: 0 8px;
+}
+
+/*******************************************************************************************/
+
+/*상품정보-이름,가격*/
+.productInfo-info {
+}
+
+.productInfo-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; /* 세로 방향으로 박스 정렬 */
+    -webkit-line-clamp: 2; /* 최대 2줄까지만 표시 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+
+.productInfo-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #191919;
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*******************************************************************************************/
+
+/*리뷰-별,평점,전체후기*/
+.productInfo-review {
+    padding: 8px 0;
+    display: flex;
+    gap: 4px;
+}
+
+.productInfo-review img {
+    width: 16px;
+    height: 16px;
+}
+
+.productInfo-review span {
+    font-size: 14px;
+}
+
+/*******************************************************************************************/
+
+.productInfo-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*오늘픽업-태그*/
+.productInfo-tag {
+    background-color: #FFB718;
+    color: #191919;
+    border-radius: 4px;
+    padding: 6px 0;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 80px;
+    text-align: center;
+}
+
+.today-product-tag {
+    color:white;
+    font-size: 12px;
+}
+
+.today-product-tag-placeholder {
+    visibility: hidden; /* 빈 공간을 차지하도록 설정 */
+    min-width: 70px; /* 실제 아이콘과 같은 최소 너비 설정 */
+    height: 26px; /* 실제 아이콘과 같은 높이 설정 */
+}
+
+/*하트,장바구니-버튼*/
+.productInfo-button button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.productInfo-button button img {
+    width: 20px;
+    height: 20px;
+}

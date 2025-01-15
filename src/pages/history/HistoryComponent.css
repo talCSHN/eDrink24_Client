@@ -1,0 +1,143 @@
+/* 공통 스타일 적용 */
+* {
+  font-family: 'Spoqa Han Sans Neo', sans-serif; /* 전체 폰트 스타일 */
+  box-sizing: border-box; /* 패딩과 보더를 포함한 박스 사이징 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 전체 컨테이너 스타일 */
+.history-container {
+  background-color: white;
+  max-width: 430px;
+  min-width: 390px;
+  margin: 0 auto; /* 0 = 위,아래의 마진값 / auto = 좌,우의 마진값 */
+}
+
+/*****************************************************************************/
+/* 상단 네비게이션 바 */
+
+.history-nav-bar {
+  height: 102px;
+  padding: 44px 20px 0; /* 위의 패딩값 / 좌,우의 패딩값 / 아래의 패딩값 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.history-nav-bar img {
+  width: 24px;
+  height: 24px;
+}
+
+.history-nav-bar button {
+  width: 58px;
+  height: 58px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.history-back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.history-bag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*****************************************************************************/
+/* 메인 컨텐츠 스타일 */
+
+.history-container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-container-top strong {
+  font-size: 16px;
+  color: #333;
+}
+
+.more-button {
+  font-size: 14px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.history-item-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.history-item-img {
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.history-item-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.history-item-content {
+  flex-grow: 1;
+}
+
+.history-item-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.history-item-quantity,
+.history-item-total-amount {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+/*****************************************************************************/
+/* 리뷰작성 버튼 */
+
+.history-review-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.history-review-button button {
+  padding: 8px 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.history-review-button button:hover {
+  background-color: #0056b3;
+}
+
+/*****************************************************************************/
+/* 추가 스타일 */
+
+.additionalInfo {
+  font-size: 14px;
+  color: #007BFF;
+  margin-left: 5px;
+}

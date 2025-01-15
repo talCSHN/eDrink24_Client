@@ -1,0 +1,125 @@
+/* 모든 요소에 기본 폰트 패밀리와 박스 사이징, 여백 설정 */
+* {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*****************************************************************************/
+/* 오늘 픽업 콘텐츠 */
+
+.basket-today-pickup-content {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+/*****************************************************************************/
+/* 전체 선택 체크박스와 텍스트 */
+
+.basket-today-pickup-content label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.basket-today-pickup-content input {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* 삭제 버튼 */
+.basket-delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*****************************************************************************/
+/* 상품정보 */
+
+.basket-table {
+    border-collapse: collapse;
+    padding: 0 20px;
+}
+
+.basket-item-container {
+    height: auto;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.basket-item {
+    height: 100px;
+    display: flex;
+}
+
+.basket-item-container input {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.basket-item-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.basket-item-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.basket-item-name {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* 수량 조절 및 가격 정보 섹션 */
+.basket-quantitiy-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.basket-quantitiy-box {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.basket-quantitiy-box button {
+    width: 32px;
+    height: 32px;
+    background-color: #AAAAAA;
+    border: none;
+    cursor: pointer;
+}
+
+.basket-quantitiy {
+    border: none;
+    text-align: center;
+    width: 36px;
+}
+
+.basket-original-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+}
